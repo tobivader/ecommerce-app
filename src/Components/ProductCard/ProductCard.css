@@ -8,15 +8,21 @@
   margin: 16px; /* Adjust margin as needed */
    /* Ensure padding and border are included in the element's total width and height */
 }
+.itemCard{
+  justify-content: left;
+  align-items: start;
+}
 
 .itemCard img {
-  width: 200px;
-  height: 200px;
+  width: 232px;
+  height: 232px;
 
 }
 #info_card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #info_card p{
   margin: 2px 0;
