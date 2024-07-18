@@ -15,9 +15,9 @@ export default function ProductCard(props) {
         </button>
       </div>
       <div id="info_card">
-        <p>{props.category}</p>
+        <p><small>{props.category}</small></p>
         <p>{props.name}</p>
-        <p>{props.price}</p>
+        <p id="price">{props.price}</p>
       </div>
     </div>
   );

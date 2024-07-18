@@ -13,7 +13,7 @@ const Products= () => {
           url={product.image.desktop}
           category={product.category}
           name={product.name}
-          price={product.price}
+          price={`$${product.price.toFixed(2)}`}
         />
       ))}
     </div>

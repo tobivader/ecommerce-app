@@ -1,3 +1,6 @@
 .product-container{
    /* css to  make it 3 per row maybe css grid  */
+   display: grid;
+   grid-template-columns: 232px 232px 232px;
+   gap: 20px;
 }
