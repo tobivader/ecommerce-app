@@ -4,8 +4,10 @@
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  width: 200px; /* Adjust width as needed */
-  margin: 16px; /* Adjust margin as needed */
+  width: 223px; /* Adjust width as needed */
+  margin: 10px; 
+  position: relative;
+  /* Adjust margin as needed */
    /* Ensure padding and border are included in the element's total width and height */
 }
 .itemCard{
@@ -18,13 +20,42 @@
   height: 232px;
 
 }
+.ProductImage{
+  border-radius: 0.5em;
+}
 #info_card{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 #info_card p{
   margin: 2px 0;
+  
 }
+#info_card > p:first-child {
+  /* This will style the first <p> element */
+  font-size: 12px;
+  color: #d6cbc7;
+}
+#price{
+  color: #dd9b7c;
+}
+#addToCart{
+  position: relative;
+  bottom: 1.3rem;
+  background-color: white;
+  padding: 10px 30px;
+  /* color: black; */
+  text-align: center;
+  border-color: #c9c1c0;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  
 
+
+}
+#addToCart:hover{
+  background-color: #0056b3;
+}
