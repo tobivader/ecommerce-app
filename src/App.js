@@ -1,4 +1,5 @@
 import Desert from "./Pages/Desserts";
+import Cart from "./Components/Cart/Cart"
 import "./App.css";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       }}
     >
       <Desert />
-      <div>Cart</div>
+      <Cart />
     </div>
   );
 }
