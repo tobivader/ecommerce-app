@@ -1,0 +1,24 @@
+
+.image-container {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Adjust width as needed */
+  margin: 16px; /* Adjust margin as needed */
+   /* Ensure padding and border are included in the element's total width and height */
+}
+
+.itemCard img {
+  width: 200px;
+  height: 200px;
+
+}
+#info_card{
+  display: flex;
+  flex-direction: column;
+}
+#info_card p{
+  margin: 2px 0;
+}
+
