@@ -17,6 +17,7 @@ function Main() {
         alignItems: "start",
         padding: "0px 60px",
         backgroundColor: "#f3e8e4",
+        gap: "20px"
       }}
     >
       <Dessert addToCart={handleAddToCart}/>

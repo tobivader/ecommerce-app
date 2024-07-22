@@ -1,8 +1,12 @@
 .Desserts_items{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     
-    
-    
+}
+.empty-cart{
+    color: #ba4924;
+}
+.empty-cart h2{
+    text-align: left;
+    padding-left: 10px;
 }
