@@ -1,23 +1,30 @@
-import React from "react";
+import React,{useState}from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 
 import "./ProductCard.css";
 import "primeicons/primeicons.css";
 
-export default function ProductCard(props) {
-  console.log(props);
+export default function ProductCard({ product,addToCart}) {
+  
+  
   return (
     <div className="itemCard">
       <div className="image-container">
-        <img className="ProductImage" src={props.url} alt={props.name} />
-        <button id="addToCart">
+        <img
+          className="ProductImage"
+          src={product.image.desktop}
+          alt={product.name}
+        />
+        <button id="addToCart"  onClick={() => addToCart(product)}>
           <MdAddShoppingCart /> Add to cart
         </button>
       </div>
       <div id="info_card">
-        <p><small>{props.category}</small></p>
-        <p>{props.name}</p>
-        <p id="price">{props.price}</p>
+        <p>
+          <small>{product.category}</small>
+        </p>
+        <p>{product.name}</p>
+        <p id="price">${product.price.toFixed(2)}</p>
       </div>
     </div>
   );

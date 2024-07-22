@@ -1,0 +1,10 @@
+.empty-cart{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+
+}
+#cartImage{
+  width: 50%;
+}

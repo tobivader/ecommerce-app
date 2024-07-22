@@ -1,23 +1,17 @@
-import React from 'react';
-import data from './data.json';
-import './Product.css';
+import React from "react";
+import data from "./data.json";
+import "./Product.css";
 
-import ProductCard from '../Components/ProductCard/ProductCard';
+import ProductCard from "../Components/ProductCard/ProductCard";
 
-const Products= () => {
+const Products = ({addToCart}) => {
   return (
-    <div className='product-container'>
+    <div className="product-container">
       {data.map((product, index) => (
-        <ProductCard 
-          key={index}
-          url={product.image.desktop}
-          category={product.category}
-          name={product.name}
-          price={`$${product.price.toFixed(2)}`}
-        />
+        <ProductCard key={index} product={product} addToCart={addToCart} />
       ))}
     </div>
   );
-}
+};
 
 export default Products;
